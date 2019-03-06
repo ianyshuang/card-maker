@@ -6,3 +6,7 @@ This is a simple web app that can generate your customized personal card by ente
 - add your photo to the card
 - two themes(dark & light) for you to choose
 
+## Image
+This is how it looks like when using
+![](./sample.png)
+
