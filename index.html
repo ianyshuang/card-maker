@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Create your card</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="clearfix">
+    <div class="col-left">
+      <h3>客製化您的名片！</h3>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="chineseName">中文姓名</label>
+            <input type="text" class="form-control" id="chineseName" placeholder="例：王小明">
+            <div>
+              <!-- 提示文字(valid or invalid) -->
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="englishName">English Name</label>
+            <input type="text" class="form-control" id="englishName" placeholder="e.g. John Wang">
+            <div class="feedback">
+              <!-- 提示文字(valid or invalid) -->
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="photoLink">照片連結</label>
+          <input type="text" class="form-control" id="photoLink" placeholder="預設圖片：https://via.placeholder.com/150">
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-8">
+            <label for="email">您的email</label>
+            <input type="email" class="form-control" id="email">
+            <div class="feedback">
+              <!-- 提示文字(valid or invalid) -->
+            </div>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="phoneNumber">您的手機</label>
+            <input type="text" class="form-control" id="phoneNumber" maxlength="10" placeholder="e.g. 0912345678">
+            <div class="feedback">
+              <!-- 提示文字(valid or invalid) -->
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="info">在兩百字以內介紹你自己(至少50字)</label>
+          <textarea class="form-control" id="info" rows="5" maxlength="200" placeholder="例：我是王小明，目前是位前端工程師..."></textarea>
+          <div class="feedback">
+            <!-- 提示文字(valid or invalid) -->
+          </div>
+          <div class="remaining">
+            <!-- 剩餘字數提示 -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="theme">選擇背景主題</label>
+          <div class="form-check form-check-inline">
+            <!-- 同一組name的radio只能選一個 -->
+            <input class="form-check-input" type="radio" name="themeChoice" id="darkTheme" value="dark-theme" checked>
+            <label class="form-check-label" for="darkTheme">Dark Theme</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <!-- 同一組name的radio只能選一個 -->
+            <input class="form-check-input" type="radio" name="themeChoice" id="lightTheme" value="light-theme">
+            <label class="form-check-label" for="lightTheme">Light Theme</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2" id="addCard">製作名片</button>
+      </form>
+
+    </div>
+
+    <div class="col-right">
+      <!-- display cards here -->
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
