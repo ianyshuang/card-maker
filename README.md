@@ -1,4 +1,4 @@
-#Card Maker
+# Card Maker
 This is a simple web app that can generate your customized personal card by entering some simple information
 
 ## Features
